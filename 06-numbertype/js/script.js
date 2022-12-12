@@ -15,7 +15,7 @@ console.log(num);
 
 // num = 0o80;
 console.log(num);
-p;
+
 let hex = 0x1a;
 console.log(hex);
 
