@@ -34,7 +34,7 @@ let falseObj = new Boolean(false);
 console.log(falseObj);
 console.log(falseObj.valueOf());
 //if (falseObj.valueOf()) {
-if (false) {
+if (falseObj) {
   console.log("INi ternyata jalan");
 }
 
