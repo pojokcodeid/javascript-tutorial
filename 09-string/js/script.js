@@ -28,8 +28,8 @@ nmClass += " btn-promary";
 nmClass += " null";
 console.log(nmClass);
 
-let status = false;
-let sts1 = status.toString();
+let status1 = false;
+let sts1 = status1.toString();
 let back = Boolean(sts1);
 back = Boolean("false");
 console.log(back);
