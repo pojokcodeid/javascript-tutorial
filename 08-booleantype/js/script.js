@@ -14,7 +14,7 @@ console.log(typeof a);
 let b = Boolean(false);
 console.log(b.valueOf());
 console.log(b.toString());
-
+console.log();
 // js boolean vs Objek Boolean
 let completed = true;
 let active = new Boolean(false);
