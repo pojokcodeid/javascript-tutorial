@@ -14,7 +14,7 @@ console.log(typeof a);
 let b = Boolean(false);
 console.log(b.valueOf());
 console.log(b.toString());
-console.log();
+
 // js boolean vs Objek Boolean
 let completed = true;
 let active = new Boolean(false);
@@ -34,7 +34,7 @@ let falseObj = new Boolean(false);
 console.log(falseObj);
 console.log(falseObj.valueOf());
 //if (falseObj.valueOf()) {
-if (falseObj) {
+if (false) {
   console.log("INi ternyata jalan");
 }
 
