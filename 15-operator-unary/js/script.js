@@ -12,10 +12,10 @@ console.log(+t);
 //objek
 let person = {
   name: "Pojok Code",
-  toString: function() {
+  toString: function () {
     return "25";
   },
-  valueOf: function() {
+  valueOf: function () {
     return "30";
   },
 };
