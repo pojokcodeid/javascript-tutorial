@@ -21,13 +21,13 @@ console.log(f1.toLowerCase() < f2.toLowerCase());
 console.log(10 < "20");
 console.log(10 == "10");
 let apple = {
-  valueOf: function() {
+  valueOf: function () {
     return 10;
   },
 };
 
 let orange = {
-  toString: function() {
+  toString: function () {
     return "20";
   },
 };
