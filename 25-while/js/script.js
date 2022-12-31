@@ -1,4 +1,4 @@
-// while loop adalah pernataan untuk perulangan
+// TODO: while loop adalah pernataan untuk perulangan
 // akan di jalankan terus selama bernilai true
 // while(expresi){
 //     -- statement
@@ -9,3 +9,4 @@ while (count < 10) {
   console.log(count);
   count += 2;
 }
+//
