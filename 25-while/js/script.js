@@ -1,4 +1,4 @@
-// TODO: while loop adalah pernataan untuk perulangan
+// TODO: while loop adalah pernyataan untuk perulangan
 // akan di jalankan terus selama bernilai true
 // while(expresi){
 //     -- statement
