@@ -3,7 +3,7 @@
 // function namaFunction(parameter){
 //   bodynya
 // }
-// 1. diawali degnan kata kerja
+// 1.      diawali degnan kata kerja
 // 2. getNama   setName
 //
 function helo(pesan) {
