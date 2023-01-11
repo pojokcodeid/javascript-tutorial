@@ -51,7 +51,7 @@ function add(x = 1, y = x, z = x + y) {
 console.log(add());
 
 let taxRate = () => 0.1;
-let getPrice = function(price, tax = price * taxRate()) {
+let getPrice = function (price, tax = price * taxRate()) {
   return price + tax;
 };
 console.log(getPrice(100));
