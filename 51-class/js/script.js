@@ -27,5 +27,3 @@ let nama = pojok.getName();
 console.log(nama);
 console.log(pojok instanceof Person2);
 console.log(pojok instanceof Object);
-//
-let contoh = Person2();
