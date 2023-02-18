@@ -1,11 +1,14 @@
 function load(url) {
   return new Promise(function (resolve, reject) {
     const request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-      if (this.readyState === 4 && this.status == 200) {
-        resolve(this.response);
-      } else {
-        reject(this.status);
+
+    request.onreadystatechange = function (e) {
+      if (this.readyState === 4) {
+        if (this.status == 200) {
+          resolve(this.response);
+        } else {
+          reject(this.status);
+        }
       }
     };
     request.open("GET", url, true);
@@ -13,18 +16,16 @@ function load(url) {
   });
 }
 
-const url = "https://www.javascripttutorial.net/sample/promise/api.json";
+const url = "/api.json"; // anggap ini load data dari database
 const btn = document.querySelector("#btnGet");
 const msg = document.querySelector("#message");
-
-btn.addEventListener("click", () => {
-  load(url)
-    .then((response) => {
+btn.onclick = function () {
+  load(url).then(
+    (response) => {
       const result = JSON.parse(response);
-      console.log(result);
       msg.innerHTML = result.message;
-    })
-    .catch((error) => {
-      msg.innerHTML = `Error getting the message, HTTP status: ${error}`;
-    });
-});
+    },
+    (error) =>
+      (msg.innerHTML = `Error getting the message, HTTP status: ${error}`)
+  );
+};
