@@ -23,13 +23,13 @@ function onRejected(error) {
 }
 const proms = getUsers();
 proms.then(onFulField, onRejected);
-//bentuk penyederhanaan dengan anonimous function
+// sederhanakan
 proms.then(
   (users) => console.log(users),
   (error) => console.log(error)
 );
 
-// catch method
+// cach method
 let success2 = false;
 function getUser2() {
   return new Promise((resolve, reject) => {
@@ -40,18 +40,17 @@ function getUser2() {
           { username: "pcode", email: "pcode@test.com" },
         ]);
       } else {
-        reject("Gagal mendapatkan data");
+        reject("Gagal Mendapatkan data");
       }
     }, 1000);
   });
 }
-
 const proms2 = getUser2();
 proms2.catch((error) => {
   console.log(error);
 });
 
-// finally() method
+// finally method
 const render = () => {
   console.log("Process render");
 };
@@ -65,7 +64,6 @@ getUser2()
     render();
   });
 
-// untuk menghidari perulangan pemanggilan kita bnisa menggunakan finaly
 getUser2()
   .then((users) => {
     console.log(users);
@@ -76,5 +74,3 @@ getUser2()
   .finally(() => {
     render();
   });
-
-// contoh penggunaan promises
