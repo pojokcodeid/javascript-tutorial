@@ -24,3 +24,11 @@ cal.sum();
 console.log(cal.result);
 cal.multiply();
 console.log(cal.result);
+
+// begitupun ketika menaggilnya
+// function importSum(){
+//   import {sum} from "./cal.js";
+// }
+
+let jumlah = cal.jumlah(10, 20);
+console.log(jumlah);
