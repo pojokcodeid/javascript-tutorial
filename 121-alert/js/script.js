@@ -2,32 +2,25 @@
 // alert("ini adalah pesan");
 // window.alert("ini adalah pesan");
 
-alert("Selmat datang di tutorial javascript");
+/* alert("Selamat datang di tutorial javascript"); */
 
-setTimeout(() => {
-  alert("Pesan setelah 3 seconds");
-}, 3000);
+// setTimeout(() => {
+//   alert("Pesan muncul setelah 3 seconds");
+// }, 3000);
 
-// selain alert kita juga bisa membuat confirmasi dialog
-// let result=window.confirm("Apakah anda yakin?");
-let result = confirm("Apakah anda yakin?");
-let message = result
-  ? "Selamat datang"
-  : "Anda tidak diizinkan mengakses halaman ini";
-alert(message);
+// let result = confirm("Apakah anda ingin menghapus data ini?");
+// let message = result ? "Data berhasil dihapus" : "Data gagal dihapus";
+// alert(message);
 
-// selain itu kita juga bisa membuat prompt dialog
-// let result=window.prompt(message,default);
-
-let lang = prompt("Apa bahasa faforit anda?");
-let feedback =
-  lang.toLowerCase() === "javascript" ? "Waw sangat keren" : `Waw ${lang}`;
-alert(feedback);
+// let lang = prompt("Apa bahasa favorite anda?");
+// let feedback =
+//   lang.toLowerCase() === "javascript" ? "Wow anda sangat keren" : `Waw ${lang}`;
+// alert(feedback);
 
 let ageStr = prompt("Berapa umur anda?");
 let age = Number(ageStr);
 let message =
   age >= 18
-    ? "Anda dapat mengakses halaman ini"
-    : "Anda tidak dapat mengakses halaman ini";
+    ? "Anda dapat melakukan transaksi"
+    : "Anda tidak dapat melakukan transaksi";
 alert(message);
