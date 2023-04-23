@@ -5,6 +5,9 @@
 // start --> menentukan index baris 0, jika start undefined baris mulai dai nol
 // stop -> index baris 0 untuk mengakhiri extraksi
 
+/*
+=> != >= <= --> <-- !== <> <!-- --> 
+*/
 let numbers = [1, 2, 3, 4, 5];
 let newNUmber = numbers.slice();
 console.log(newNUmber);
@@ -18,3 +21,5 @@ function toArray() {
 }
 var clasification = toArray("A", "B", "C");
 console.log(clasification);
+
+

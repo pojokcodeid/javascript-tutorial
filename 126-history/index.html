@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- 
+Author  = Pojok Code
+Date    = 2023-04-20
+File    = index.html
+-->
+<html lang="en">
+  <head>
+    <title></title>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="" rel="stylesheet" />
+    <script src=""></script>
+  </head>
+
+  <body>
+    Masukn Nama : <input type="text" name="txtNama" value="" /><br /><br />
+    <button type="button" onclick="goto2()">Ke Halaman 2</button>&nbsp;
+    <button type="button" onclick="goForward()">Ke Depan</button>
+    <button type="button" onclick="history.go()">Refresh</button>
+    <script>
+      // history.back(); -> digunakan untuk kembali ke halaman sebelumnya beserta tapilan saat itu
+      //history.forward() -> digunakan untuk memindahkan pengguna ke halaman selanjutnya dalam riwayat peramban
+      // history.go(-1); -> ini mirip dengan history back
+      // history.go(1); -> ini mirip dengan history forward
+      // history.go(0); -> refresh halaman saat ini
+      function goto2() {
+        window.location.href = "hal2.html";
+      }
+
+      function goForward() {
+        history.forward();
+      }
+    </script>
+  </body>
+</html>
