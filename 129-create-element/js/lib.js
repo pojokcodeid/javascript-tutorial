@@ -1,1 +1,1 @@
-alert("Example Jalang");
+alert("Ini Load Dari Lib");
