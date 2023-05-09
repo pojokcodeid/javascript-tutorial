@@ -2,6 +2,7 @@
 // setAtrinbute() adalah sebuah metode untuk menetapkan nilai atribute pada
 // element tertentu.
 // element.setAttribute(attribute, value);
+
 let btnSend = document.getElementById("btnSend");
 if (btnSend) {
   btnSend.addEventListener("click", function () {
@@ -14,6 +15,7 @@ if (btnSend) {
 /* getatribute */
 // getAttribute() adalah sebuah metode untuk mendapatkan nilai atribute pada
 // element tertentu.
+
 let google = document.getElementById("google");
 if (google) {
   let target = google.getAttribute("target");
@@ -25,6 +27,7 @@ if (google) {
 /* remove atribute */
 // removeAttribute() adalah sebuah metode untuk menghapus atribute dengan nama
 // tertentu pada element.
+
 let draft = document.getElementById("draft");
 if (draft) {
   draft.removeAttribute("disabled");
@@ -33,10 +36,11 @@ if (draft) {
 /* hashatribute */
 // hashAttribute() adalah sebuah fungsi yang digunakan untuk memeriksa apakah
 // suatu element memiliki atribute tertentu.
+
 let btn = document.getElementById("btnSend");
 if (btn) {
-  let disable = btn.hasAttribute("disabled");
-  console.log(disable);
+  let disabled = btn.hasAttribute("disabled");
+  console.log(disabled);
 }
 
 function check() {
