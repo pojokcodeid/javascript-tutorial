@@ -1,0 +1,17 @@
+.wadah {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+
+#scrollDemo {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  background-color: yellow;
+}
+#scrollDemo p {
+  width: 300px;
+  height: 300px;
+}
