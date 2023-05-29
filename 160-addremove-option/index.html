@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="container">
+        <form action="#">
+          <label for="framework">Framework :</label>
+          <input
+            type="text"
+            id="framework"
+            placeholder="Input Framework"
+            autocomplete="off"
+          />
+          <button id="btnAdd" class="primary">Add</button>
+          <label for="list">Frawework List :</label>
+          <select name="list" id="list" multiple></select>
+          <button id="btnRemove" class="primary">Remove Framework</button>
+        </form>
+      </div>
+    </div>
+    <!-- double list -->
+    <div class="main">
+      <h3>double list</h3>
+      <div class="row">
+        <table>
+          <tr>
+            <td>
+              <select name="car" id="car" multiple>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+                <option value="Nissan">Nissan</option>
+              </select>
+            </td>
+            <td>
+              <button id="btnGet" class="select">>></button>
+              <button id="btnDel" class="select"><<</button>
+            </td>
+            <td>
+              <select name="car2" id="car2" multiple></select>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

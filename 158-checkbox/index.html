@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- basic exaple -->
+    <label for="accept">
+      <input
+        type="checkbox"
+        id="accept"
+        name="accept"
+        value="yes"
+        checked
+      />accept
+    </label>
+    <!-- get checkbox value -->
+    <label for="accept2">
+      <input type="checkbox" id="accept2" name="accept2" /> accept2
+    </label>
+    <button id="btn">Submit</button>
+    <hr />
+    <!-- multiple checkbox -->
+    <div>
+      <label for="c1">
+        <input type="checkbox" id="c1" name="color" value="red" />Red
+      </label>
+      <label for="c2">
+        <input type="checkbox" id="c2" name="color" value="green" />Green
+      </label>
+      <label for="c3">
+        <input type="checkbox" id="c3" name="color" value="Blue" />Blue
+      </label>
+    </div>
+    <p>
+      <button id="btnGet">GetSelected</button>
+    </p>
+    <hr />
+    <p>
+      <button id="btnChk">Check/uncheck All</button>
+    </p>
+    <!-- checkbox dinamis -->
+    <div id="root"></div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

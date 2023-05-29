@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- single selectbox -->
+    <div>
+      <select name="language" id="language">
+        <option value="react">React</option>
+        <option value="vue">Vue</option>
+        <option value="angular">Angular</option>
+        <option value="svelte">Svelte</option>
+        <option value="ember">Ember</option>
+      </select>
+      <button id="btn1">Get Index</button>
+      <button id="btn2">Get Value</button>
+    </div>
+    <p></p>
+    <div>
+      <select multiple name="framework" id="framework">
+        <option value="react">React</option>
+        <option value="vue">Vue</option>
+        <option value="angular">Angular</option>
+        <option value="svelte">Svelte</option>
+        <option value="ember">Ember</option>
+      </select>
+      <button id="btn3">Get Value</button>
+    </div>
+    <p></p>
+    <div id="root"></div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
