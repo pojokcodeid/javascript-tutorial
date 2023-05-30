@@ -1,0 +1,28 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafb;
+}
+
+label,
+select {
+  display: block;
+  margin: 10px 0;
+}
+
+.main {
+  text-align: center;
+  width: 250px;
+}
+
+.main label {
+  width: 100%;
+  text-align: center;
+}
+
+.main input {
+  width: 240px;
+}
+
+.main select {
+  width: 100%;
+}
