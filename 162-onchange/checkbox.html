@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="status">Web Teknologi :</label>
+    <input type="checkbox" name="html" id="html" /> HTML
+    <input type="checkbox" name="css" id="css" /> CSS
+    <input type="checkbox" name="js" id="js" /> Javascript
+    <p id="result"></p>
+    <script>
+      let result = document.querySelector("#result");
+      document.body.addEventListener("change", (e) => {
+        let target = e.target;
+        let message;
+        switch (target.id) {
+          case "html":
+            message = "checkbox HTML terpilih";
+            break;
+          case "css":
+            message = "checkbox CSS terpilih";
+            break;
+          case "js":
+            message = "checkbox Javascript terpilih";
+            break;
+        }
+        result.textContent = message;
+      });
+    </script>
+  </body>
+</html>
