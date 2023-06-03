@@ -11,7 +11,6 @@ class WordCounter {
   }
 
   emitEvent(wordStat) {
-    // Create count event
     let countEvent = new CustomEvent("count", {
       bubbles: true,
       cancelable: true,
@@ -19,7 +18,6 @@ class WordCounter {
         wordStat,
       },
     });
-    // dispatch the count event
     this.inputText.dispatchEvent(countEvent);
   }
   getWordStat(str) {
