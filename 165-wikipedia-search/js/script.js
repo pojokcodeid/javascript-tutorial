@@ -8,15 +8,12 @@ searchTermElem.addEventListener("input", function (event) {
 });
 
 const debounce = (fn, delay = 500) => {
-  let timeoutId;
-
+  let timeoutid;
   return (...args) => {
-    // cancel the previous timer
-    if (timeoutId) {
-      clearTimeout(timeoutId);
+    if (timeoutid) {
+      clearTimeout(timeoutid);
     }
-    // setup a new timer
-    timeoutId = setTimeout(() => {
+    timeoutid = setTimeout(() => {
       fn.apply(null, args);
     }, delay);
   };
@@ -29,8 +26,8 @@ const stripHtml = (html) => {
 };
 
 const highlight = (str, keyword, className = "highlight") => {
-  const hl = `<span class="${className}">${keyword}</span>`;
-  return str.replace(new RegExp(keyword, "gi"), hl);
+  const h1 = `<span class="${className}">${keyword}</span>`;
+  return str.replace(new RegExp(keyword, "gi"), h1);
 };
 
 const generateSearchResultHTML = (results, searchTerm) => {
@@ -50,27 +47,21 @@ const generateSearchResultHTML = (results, searchTerm) => {
 };
 
 const search = debounce(async (searchTerm) => {
-  // if the search term is removed,
-  // reset the search result
   if (!searchTerm) {
-    // reset the search result
     searchResultElem.innerHTML = "";
     return;
   }
 
   try {
-    // make an API request
     const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info|extracts&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${searchTerm}`;
     const response = await fetch(url);
     const searchResults = await response.json();
 
-    // render search result
     const searchResultHtml = generateSearchResultHTML(
       searchResults.query.search,
       searchTerm
     );
 
-    // add the search result to the searchResultElem
     searchResultElem.innerHTML = searchResultHtml;
   } catch (error) {
     console.log(error);
